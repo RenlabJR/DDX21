@@ -2,7 +2,7 @@
 computeMatrix reference-point -p 12 -R $DDX21 -S $METTL3_bw -b 1000 -a 1000 --referencePoint center --binSize 5 --skipZeros -o METTL3_2_DDX21_peak.gz --outFileSortedRegions METTL3_2_DDX21_peak.bed --outFileNameMatrix METTL3_2_DDX21_peak.tab
 plotHeatmap -m METTL3_2_DDX21_peak.gz -out METTL3_2_DDX21_peak.pdf --outFileSortedRegions sorted.METTL3_2_DDX21_peak.bed --sortRegions descend --sortUsing mean  --heatmapWidth 1.5 --heatmapHeight 4  --colorList 'black, yellow' --whatToShow 'heatmap and colorbar' --samplesLabel METTL3_2_DDX21_peak
 
-####FigureS2E
+####FigureS2F
 options(stringAsFactors=F)
 Rloop <- read.table("mRNA.Rloop.peaks", header=F)
 DDX21 <- read.table("DDX21_annoRloop.freq", header=F)[c("V8","V9")]
